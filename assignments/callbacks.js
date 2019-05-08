@@ -59,10 +59,16 @@ multiplyNums(22, 58, function(mul) {
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  for (i = 0; i <= item.length; i++);
+  for (i = 0; i < list.length; i++) {
+    if (list[i] === item) {
+      cb(true);
+      return;
+    }
+  }
+  cb(false);
 }
-contains("Gum", function(contains) {
-  console.log(contains);
+contains("yo-yo", items, function(isThere) {
+  console.log(isThere);
 });
 /* STRETCH PROBLEM */
 
