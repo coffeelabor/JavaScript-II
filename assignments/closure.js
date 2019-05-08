@@ -1,9 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+function outer() {
+  var = b 
+  console.log("this is not closure cause its not nested, so I have access to b but not a?");
+  function closureFunction() {
+    var = a
+    console.log("this is closure since its in the socpe in a function so i have access to b and a");
+  }
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
